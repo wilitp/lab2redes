@@ -44,10 +44,9 @@ class Server(object):
             # FALTA: Aceptar una conexión al server, crear una
             # Connection para la conexión y atenderla hasta que termine.
             conn_socket, address = self.socket.accept()
-            connection = connection.Connection(conn_socket, self.directory)
+            con = connection.Connection(conn_socket, self.directory)
             print ("Connection from %s\n" % address[0])
             #Manejar conexion 
-            conn_socket.close()
             
 
 
