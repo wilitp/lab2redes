@@ -10,7 +10,7 @@ DEFAULT_ADDR = '0.0.0.0'  # 0.0.0.0 representa todas las IPv4 del server
 DEFAULT_PORT = 19500
 
 
-EOL = '\r\n'
+EOL = b'\r\n'
 
 
 CODE_OK = 0
@@ -24,16 +24,16 @@ BAD_OFFSET = 203
 
 
 error_messages = {
-    CODE_OK: "OK",
+    CODE_OK: b"OK",
     # 1xx: Errores fatales (no se pueden atender más pedidos)
-    BAD_EOL: "BAD EOL",
-    BAD_REQUEST: "BAD REQUEST",
-    INTERNAL_ERROR: "INTERNAL SERVER ERROR",
+    BAD_EOL: b"BAD EOL",
+    BAD_REQUEST: b"BAD REQUEST",
+    INTERNAL_ERROR: b"INTERNAL SERVER ERROR",
     # 2xx: Errores no fatales (no se pudo atender este pedido)
-    INVALID_COMMAND: "NO SUCH COMMAND",
-    INVALID_ARGUMENTS: "INVALID ARGUMENTS FOR COMMAND",
-    FILE_NOT_FOUND: "FILE NOT FOUND",
-    BAD_OFFSET: "OFFSET EXCEEDS FILE SIZE",
+    INVALID_COMMAND: b"NO SUCH COMMAND",
+    INVALID_ARGUMENTS: b"INVALID ARGUMENTS FOR COMMAND",
+    FILE_NOT_FOUND: b"FILE NOT FOUND",
+    BAD_OFFSET: b"OFFSET EXCEEDS FILE SIZE",
 }
 
 
